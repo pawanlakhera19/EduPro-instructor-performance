@@ -73,14 +73,12 @@ Kimberly Miller (Cybersecurity, rating 4.58) recorded the highest total enrollme
 **How to Use**
 
 Clone or download this repository
-Open EduPro_Instructor_Performance.pbix in Power BI Desktop
-Use the Expertise, Course Category, and Course Level slicers to filter any page
+Open EduPro online platform.pdf in Desktop
 Explore the Instructor Impact page to compare top and low performers side by side
 
 
 **Repository Contents**
 
-EduPro_Instructor_Performance.pbix — Power BI dashboard file
 EduPro_Online_Platform.xlsx — Source dataset
 EduPro_Research_Paper.pdf — Full EDA, methodology, and recommendations writeup
 eudpro online platform.pdf- Dashboard page previews
