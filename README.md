@@ -1,4 +1,4 @@
-**Instructor Performance and Course Quality Evaluation on EduPro**
+# Instructor Performance and Course Quality Evaluation on EduPro
 A Power BI analytics project that evaluates instructor effectiveness, course quality, and learner satisfaction across EduPro's online learning platform — identifying top-performing and underperforming instructors, high-demand course categories, and actionable recommendations to improve platform quality. Built as part of the Unified Mentor Data Analytics program.
 
 
