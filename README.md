@@ -1,8 +1,10 @@
 # Instructor Performance and Course Quality Evaluation on EduPro
+
 A Power BI analytics project that evaluates instructor effectiveness, course quality, and learner satisfaction across EduPro's online learning platform — identifying top-performing and underperforming instructors, high-demand course categories, and actionable recommendations to improve platform quality. Built as part of the Unified Mentor Data Analytics program.
 
 
 **Problem Statement**
+
 EduPro offers a wide range of online courses delivered by instructors with varying levels of expertise, experience, and teaching effectiveness. Differences in instructor performance and course quality significantly impact learner satisfaction, course ratings, enrollments, and platform credibility.
 The platform currently lacks clarity on:
 
@@ -26,11 +28,13 @@ Tool Purpose- Power Query, Data cleaning, type validation, relationship setupPow
 
 
 **Methodology**
+
 **1. Data Modeling (Star Schema)**
 A Star Schema was designed with Fact_Transactions at the center, connected to four dimension tables: Dim_Teachers, Dim_Courses, Dim_Users, and a Date table. This structure enables efficient cross-filtering across all dashboard pages.
 
 
 **2. Key DAX Measures**
+
 Custom DAX measures were built to capture platform-wide performance, including:
 
 **Experience Impact Scor**e — measures the influence of instructor experience on course outcomes
@@ -40,6 +44,7 @@ Custom DAX measures were built to capture platform-wide performance, including:
 
 
 **3. Exploratory Data Analysis (EDA)**
+
 Four EDA sections were developed:
 
 Section A — Platform-wide KPI dashboard, enrollment by category, gender distribution, rating tier analysis
