@@ -24,12 +24,14 @@ How evenly is teaching performance distributed across the platform?
 **Key fields used:** TeacherID, TeacherName, Expertise, YearsOfExperience, TeacherRating, CourseID, CourseName, CourseCategory, CourseLevel, CourseRating, TransactionID, Gender, Age.
 
 ** Tools Used**
+
 Tool Purpose- Power Query, Data cleaning, type validation, relationship setupPower BI (DAX), KPI measures, calculated columns, segmentation logic, Power BI Desktop Report design, visuals, conditional formatting, Power BI Service Dashboard publishing
 
 
 **Methodology**
 
 **1. Data Modeling (Star Schema)**
+
 A Star Schema was designed with Fact_Transactions at the center, connected to four dimension tables: Dim_Teachers, Dim_Courses, Dim_Users, and a Date table. This structure enables efficient cross-filtering across all dashboard pages.
 
 
@@ -66,13 +68,17 @@ All pages are cross-filtered using Department, Expertise, and Course Level slice
 **Key Insights**
 
 The average Teacher Rating (3.13) and average Course Rating (3.10) are nearly identical, confirming that instructor quality is the primary driver of learner satisfaction on the platform.
+
 Teacher ratings range from 1.07 to 4.97, a gap of 3.90 points, indicating substantial variation in instructional quality across the platform.
 Marketing (4.3), Machine Learning (4.2), and Programming (4.0) are the highest-rated expertise areas, all significantly above the platform average of 3.13.
 Design (2.3) and Web Development (2.5) are the weakest expertise areas and require immediate curriculum and instructor quality improvement.
 Data Science records the highest enrollment (916 learners), reflecting strong learner demand for technology and career-oriented skills.
 Free Beginner and Intermediate courses outperform their paid counterparts in learner ratings, demonstrating that content quality — not pricing — drives satisfaction.
+
 Instructor ratings above 4.0 are predominantly found among instructors with 8 or more years of experience, confirming a positive relationship between experience and teaching effectiveness.
+
 Kimberly Miller (Cybersecurity, rating 4.58) recorded the highest total enrollment on the platform (3,025 learners), demonstrating a strong link between instructor reputation and enrollment volume.
+
 
 
 **How to Use**
@@ -85,9 +91,17 @@ Explore the Instructor Impact page to compare top and low performers side by sid
 **Repository Contents**
 
 EduPro_Online_Platform.xlsx — Source dataset
+
 EduPro_Research_Paper.pdf — Full EDA, methodology, and recommendations writeup
+
 eudpro online platform.pdf- Dashboard page previews
+
 summary for government stakeholders- eduPro.pdf — Executive summary for stakeholders
+
+app.py- live web- https://edupro-instructor-performance-fheepsjg4bnqfjatsaeitb.streamlit.app/
+
+requirements.txt
+
 
 
 **Author**
