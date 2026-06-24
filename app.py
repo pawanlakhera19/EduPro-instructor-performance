@@ -31,8 +31,8 @@ st.markdown("""
         border-radius: 12px;
         padding: 16px;
     }
-    [data-testid="metric-container"] label { color: #ffffff !important; font-size: 0.78rem !important; }
-    [data-testid="metric-container"] [data-testid="stMetricValue"] { color: #ffffff !important; font-size: 1.8rem !important; font-weight: 700; }
+    [data-testid="metric-container"] label { color: #c084fc !important; font-size: 0.78rem !important; }
+    [data-testid="metric-container"] [data-testid="stMetricValue"] { color: #ffd700 !important; font-size: 1.8rem !important; font-weight: 700; }
     
     /* Section headers */
     .section-header {
@@ -322,8 +322,6 @@ with tab2:
                 hover_data={"Expertise": True, "TeacherRating": ":.2f", "YearsOfExperience": True},
                 color_discrete_sequence=COLOR_SEQ,
                 title="Years of Experience vs Teacher Rating",
-                trendline="lowess",
-                trendline_color_override=GOLD,
             )
             fig.update_layout(**PLOTLY_LAYOUT, height=400,
                               title=dict(text="Years of Experience vs Teacher Rating", font=dict(color=GOLD, size=13)))
@@ -424,7 +422,7 @@ with tab3:
             fig3 = px.scatter(filt_courses, x="CourseDuration", y="CourseRating",
                               color="CourseCategory", hover_name="CourseName",
                               color_discrete_sequence=COLOR_SEQ,
-                              trendline="lowess", trendline_color_override=GOLD)
+                              )
             fig3.update_layout(**PLOTLY_LAYOUT, height=360,
                                title=dict(text="Course Duration vs Rating", font=dict(color=GOLD, size=13)),
                                xaxis_title="Duration (hrs)", yaxis_title="Course Rating")
