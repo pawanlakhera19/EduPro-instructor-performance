@@ -424,7 +424,7 @@ with tab3:
             fig3 = px.scatter(filt_courses, x="CourseDuration", y="CourseRating",
                               color="CourseCategory", hover_name="CourseName",
                               color_discrete_sequence=COLOR_SEQ,
-                              trendline="ols", trendline_color_override=GOLD)
+                              trendline="lowess", trendline_color_override=GOLD)
             fig3.update_layout(**PLOTLY_LAYOUT, height=360,
                                title=dict(text="Course Duration vs Rating", font=dict(color=GOLD, size=13)),
                                xaxis_title="Duration (hrs)", yaxis_title="Course Rating")
